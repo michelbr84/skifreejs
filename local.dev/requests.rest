@@ -1,0 +1,56 @@
+POST http://localhost:3000/api/score HTTP/1.1
+Content-Type: application/json
+
+{
+	"username": "Sk8terBoi69",
+	"score": 73465
+}
+
+###
+POST http://localhost:3000/api/register HTTP/1.1
+Content-Type: application/json
+
+{
+	"username": "judeboy",
+	"email": "judegiordano@gmail.com",
+	"password": "test1234",
+	"score": 420
+}
+
+###
+POST http://localhost:3000/api/login HTTP/1.1
+Content-Type: application/json
+
+{
+	"username": "Sk8terBoi",
+	"password": "Test1234!"
+}
+
+###
+POST http://localhost:3000/api/validate
+Authorization: Bearer token
+
+###
+GET http://localhost:3000/api/leaderboard/10
+
+###
+POST http://localhost:3000/api/updatepassword HTTP/1.1
+Authorization: Bearer token
+Content-Type: application/json
+
+{
+	"newPassword": "blahblah",
+	"password": "Testd1234!"
+}
+
+###
+POST http://localhost:3000/api/sendrecovery HTTP/1.1
+Content-Type: application/json
+
+{
+	"username": "judeboy",
+	"email": "judegiordano@gmail.com"
+}
+
+###
+GET http://localhost:3000/api/leaderboardslalom/10
